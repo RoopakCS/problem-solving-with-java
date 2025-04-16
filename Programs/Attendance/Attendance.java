@@ -27,5 +27,7 @@ public class Attendance {
         } else {
             System.out.println("You're makred as absent");
         }
+
+        sc.close();
     }
 }
