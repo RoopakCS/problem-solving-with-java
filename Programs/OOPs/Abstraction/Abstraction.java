@@ -34,10 +34,13 @@ interface location {
 interface defaultUser {
     public void showIdCard();
 
-    public void hourlyMessage();
+    // default and static
+    public default void hourlyMessage() {
+        System.out.println("Hourly Message");
+    }
 }
 
-class serviceManager implements location, defaultUser {
+class ServiceManager implements location, defaultUser {
 
     @Override
     public void showIdCard() {
@@ -64,5 +67,8 @@ public class Abstraction {
         Car car = new Car();
         car.complyRegls();
         car.capacityCheck();
+
+        ServiceManager sm = new ServiceManager();
+        sm.hourlyMessage();
     }
 }
