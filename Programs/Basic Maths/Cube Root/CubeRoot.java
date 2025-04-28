@@ -25,7 +25,7 @@ public class CubeRoot {
             }
         }
 
-        System.out.print("The cube root of " + (int)num + " is " + ans);
+        System.out.print("The cube root of " + (int) num + " is " + ans);
         sc.close();
     }
 }
