@@ -5,11 +5,9 @@ public class SumOfArray {
         }
         return sum(arr, size - 1) + arr[size];
     }
-
     public static void main(String[] args) {
         int[] arr = { 9, 7, 6, 3, 3 };
         int size = arr.length - 1;
         System.out.println("Sum of the array is: " + sum(arr, size));
     }
-}
- 
+} 
