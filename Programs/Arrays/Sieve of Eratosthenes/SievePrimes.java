@@ -20,7 +20,7 @@ public class SievePrimes {
             }
         }
 
-        for (int i = 0; i < primes.length; i++) {
+        for (int i = 2; i < primes.length; i++) {
             if (primes[i]) {
                 System.out.print(i + " ");
             }
